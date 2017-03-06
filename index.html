@@ -25,9 +25,9 @@
     var y = "Hello, world!";
     document.write("js var x = " + y + "<br/>");
     
-    function funky(x)
+    function funky(x, y)
     {
-      alert("yeah! -- my " + x + " appears to be working.");
+      alert("yeah! -- my " + x + " appears to be working." + y);
     }
   
     
@@ -35,7 +35,7 @@
   </script>
   
   <form>
-    <input type="button" value="no problem" onclick="funky(x)">
+    <input type="button" value="no problem" onclick="funky(x, y)">
   </form>
 
 
