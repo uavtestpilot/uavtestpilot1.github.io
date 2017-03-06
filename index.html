@@ -24,15 +24,15 @@
     var x = 1776.3142527;
     document.write("js var x = " + x + "\n");
     
-    function funky()
+    function funky(x)
     {
-      alert("ouch! -- my \"\\n\" does not appear to be working.");
+      alert("ouch! -- my " + x + "does not appear to be working.");
     }
  
   </script>
 
   <form>
-    <input type="button" value="problem!" onclick="funky()"/>
+    <input type="button" value="problem!" onclick="funky("my \"\\n\"")"/>
   </form>
                                
                                
