@@ -21,22 +21,20 @@
   <script type="text/javascript">
     document.write("javascript document.write -- hello world!" + "<br/>");
     
-    var x = "\"\\n\"";
+    var x = "\<br\/\>";
     document.write("js var x = " + x + "<br/>");
     
     function funky(x)
     {
-      alert("ouch! -- my " + x + " does not appear to be working.");
+      alert("yeah! -- my " + x + " does appearS to be working.");
     }
-    
-    funky("newline");
-    funky("\"\\n\"");
+  
     
                                
   </script>
   
   <form>
-    <input type="button" value="problem" onclick="funky(x)">
+    <input type="button" value="no problem" onclick="funky(x)">
   </form>
 
 
