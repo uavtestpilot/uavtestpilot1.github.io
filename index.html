@@ -19,17 +19,7 @@
 
     
   <script type="text/javascript">
-    document.write("javascript document.write -- hello world!" + "<br/>");
-    
-    var x = "<br\/>";
-    var y = "Hello, world!";
-    
-    document.write("js var x = " + y + "<br/>");
-    
-    function funky(x, y)
-    {
-      alert("yeah! -- my " + x + " appears to be working. Ohhh... " + y);
-    }
+
     
     function add()
     {
@@ -39,7 +29,7 @@
     
     function operateNumbers(operation)
     {
-      switch('+')
+      switch '+':
           document.write("operator: " + operation + " passed in." + "<br/>"); break;
     }
     
@@ -49,7 +39,7 @@
   
   
   <form>
-    <input type="button" value="add" onclick="operation(add())"/>
+    <input type="button" value="add" onclick="operateNumbers(add())"/>
   </form>
 
 
