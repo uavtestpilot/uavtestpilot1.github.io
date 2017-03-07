@@ -21,23 +21,29 @@
   <script type="text/javascript">
     document.write("javascript document.write -- hello world!" + "<br/>");
     
-    var x = "\<br\/\>";
+    var x = "<br\/>";
     var y = "Hello, world!";
     
     document.write("js var x = " + y + "<br/>");
     
-    function funky(x, y, a, b)
+    function funky(x, y)
     {
       alert("yeah! -- my " + x + " appears to be working. Ohhh... " + y);
-      return (a + b);
+    }
+    
+    function add(x, y)
+    {
+      return x + y;
     }
   
     
                                
   </script>
   
+  add(9, 123);
+  
   <form>
-    <input type="button" value="no problem" onclick="document.write(funky(x, y, 7, 8))">
+    <input type="button" value="no problem" onclick="document.write(funky(x, y))">
   </form>
 
 
