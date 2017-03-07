@@ -27,9 +27,9 @@
     }
   
     
-    function operateNumbers(operation)
+    function operateNumbers(op, q1, q2)
     {
-      switch(operation)
+      switch(op)
       {
           case '+':
             document.write("operator: " + operation + " passed in." + "<br/>"); break;
@@ -42,7 +42,11 @@
   
   
   <form>
-    <input type="button" value="add" onclick="operateNumbers(add())"/>
+     Enter first number: <input type="number" name="q1"> <input type="submit">
+     Enter second number: <input type="number" name="q2"> <input type="submit">
+
+    <input type="button" value="add" onclick="operateNumbers(add(), q1, q2)"/>
+    
   </form>
 
 
