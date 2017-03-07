@@ -31,18 +31,25 @@
       alert("yeah! -- my " + x + " appears to be working. Ohhh... " + y);
     }
     
-    function add(x, y)
+    function add()
     {
-      return x + y;
+      return '+';
     }
   
-    document.write(add(9, 123));
+    
+    function operateNumbers(operation)
+    {
+      switch('+')
+          document.write("operator: " + operation + " passed in." + "<br/>"); break;
+    }
+    
+    
                                
   </script>
   
   
   <form>
-    <input type="button" value="no problem" onclick="document.write(funky(x, y))">
+    <input type="button" value="add" onclick="operation(add())"/>
   </form>
 
 
