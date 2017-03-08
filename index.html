@@ -24,7 +24,7 @@
     {
       return '+';
     }
-    function subtraction()
+    function subtract()
     {
       return '-';
     }
@@ -32,7 +32,7 @@
     {
       return '*';
     }
-    function division()
+    function divide()
     {
       return '/';
     }
@@ -43,24 +43,30 @@
     
     
 
-    var op = multiply();
+    var op = add();
+    var x = 99;
+    var y = 17;
     
-    function wtf(op){
-    switch(op)
+    function opNumbers(op, x, y)
     {
-      case '+':
+      
+      switch(op)
+      {
+        case '+':
+          var result = x + y;
+          document.write(x + op + y + " = " + result + "<br/>"); break;
+        case '-':
           document.write("op = " + op + "<br/>"); break;
-      case '-':
+        case '*':
           document.write("op = " + op + "<br/>"); break;
-      case '*':
+        case '/':
           document.write("op = " + op + "<br/>"); break;
-      case '/':
+        case '%':
           document.write("op = " + op + "<br/>"); break;
-      case '%':
-          document.write("op = " + op + "<br/>"); break;
-      default:
-        document.write("unknown operator" + "<br/>");
-    } }
+        default:
+          document.write("unknown operator" + "<br/>");
+      } 
+    }
       
     wtf(op);                           
   </script>
