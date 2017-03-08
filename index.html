@@ -24,16 +24,42 @@
     {
       return '+';
     }
-  
+    function subtraction()
+    {
+      return '-';
+    }
+    function multiply()
+    {
+      return '*';
+    }
+    function division()
+    {
+      return '/';
+    }
+    function remainder()
+    {
+      return '%';
+    }
+    
     
 
-    var op = add();
+    var op = remainder();
     
     
     switch(op)
     {
-        case '+':
+      case '+':
           document.write("op = " + op + "<br/>"); break;
+      case '-':
+          document.write("op = " + op + "<br/>"); break;
+      case '*':
+          document.write("op = " + op + "<br/>"); break;
+      case '/':
+          document.write("op = " + op + "<br/>"); break;
+      case '%':
+          document.write("op = " + op + "<br/>"); break;
+      default:
+        document.write("unknown operator" + "<br/>");
     } 
                                
   </script>
